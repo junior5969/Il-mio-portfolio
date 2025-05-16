@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio">
+    <meta name="keywords" content="Biography, skills, job experience, education">
+    <meta name="author" content="Chiara">
+
+
+    <meta property="og:title" content="Portfolio di Chiara Barletta. Biologa e Web Developer">
+    <meta property="og:description"
+        content="Scopri il portfolio di Chiara Barletta: biologa con passione per lo sviluppo web. Curriculum, competenze e progetti in evidenza.">
+    <meta property="og:image" content="https://junior5969.github.io/Il-mio-portfolio/assets/img/og-img.jpg">
+    <meta property="og:url" content="https://junior5969.github.io/Il-mio-portfolio">
+    <meta property="og:type" content="website">
+
+    <!--FONT FAMILY-->
+    <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--ICON-->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!--CSS+FAVICON-->
+
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.ico">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Bio-Creator</title>
+
+</head>
+
+<body>
+
+    <header aria-label="Intestazione del sito con logo">
+        <div class="d-flex align-items-center justify-content-around py-1">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo.png" alt="Logo Barletta Chiara" class="d-inline-block align-middle logo mx-3">
+            </a>
+        </div>
+    </header>
+
+    <nav class="navbar sticky-top border shadow" aria-label="Navigazione secondaria con link alle sezioni">
+        <div class="container-fluid p-2 sticky-navbar">
+            <ul class="d-flex flex-row justify-content-around align-items-center list-unstyled w-100 m-0">
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item dropdown mx-3">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Portfolio
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#CV">CV</a></li>
+                        <li><a class="dropdown-item" href="#projects">Progetti</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="#contact">Contatti</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section aria-labelledby="hero-title" id="home">
+            <div class="hero-section">
+                <div class="hero-description rounded-3">
+                    <h1 id="hero-title">Ciao<br><span id="hero-description-title">Sono Chiara!</span></h1>
+                    <p class="hero-description-text">Biologa e aspirante sviluppatrice.
+                        Combino la passione per i colori e l'arte
+                        con il pensiero scientifico per sviluppare soluzioni front-end intuitive e creative.
+                    </p>
+                </div>
+                <div class="hero-image">
+                    <img class="profile-img" src="assets/img/photo-profile.png" alt="Foto profilo di Barletta Chiara">
+                </div>
+            </div>
+        </section>
+
+        <section class="CV-header" id="CV" aria-labelledby="CV-title"
+            aria-label="Intestazione della sezione Curriculum Vitae">
+            <h2 id="CV-title"> <span>Questo</span> è il <br> mio <span>curriculum</span></h2>
+        </section>
+        <div class="CV-body">
+            <section class="CV-education" aria-labelledby="education-title"
+                aria-label="Sezione Istruzione e formazione">
+                <div id="CV-education-title">
+                    <i class="bi bi-book"></i>
+                    <h2 id="education-title">Istruzione e formazione</h2>
+                </div>
+                <div class="CV-education-items">
+                    <article class="first-education-item">
+                        <h3>Laurea magistrale in Biologia</h3>
+                        <div class="CV-education-date">
+                            <time datetime="2022-12">12/2022</time>
+                        </div>
+                        <div class="CV-education-description">
+                            <dl>
+                                <dt>Classe LM-6, curriculum Patologico-Molecolare</dt>
+                                <dd>Università della Calabria, Arcavacata (CS)</dd>
+                            </dl>
+                        </div>
+                    </article>
+                    <article class="second-education-item">
+                        <h3>Tirocinio curriculare</h3>
+                        <div class="CV-education-date">
+                            <time datetime="2022-12">12/2022</time>
+                        </div>
+                        <div class="CV-education-description">
+                            <dl>
+                                <dt>Laboratorio di Fisiologia Vascolare</dt>
+                                <dd>Università della Calabria, Arcavacata (CS)</dd>
+                            </dl>
+                        </div>
+                    </article>
+                    <article class="third-education-item">
+                        <h3>Laurea triennale in Biologia</h3>
+                        <div class="CV-education-date">
+                            <time datetime="2020-12">12/2020</time>
+                        </div>
+                        <div class="CV-education-description">
+                            <dl>
+                                <dt>Classe L-13</dt>
+                                <dd>Università della Calabria, Arcavacata (CS)</dd>
+                            </dl>
+                        </div>
+                    </article>
+                    <article class="fourth-education-item">
+                        <h3>Diploma</h3>
+                        <div class="CV-education-date">
+                            <time datetime="2017-07">07/2017</time>
+                        </div>
+                        <div class="CV-education-description">
+                            <dl>
+                                <dt>Diploma di maturità scientifica</dt>
+                                <dd>Liceo scientifico Filolao, Crotone (KR) </dd>
+                            </dl>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="CV-job" aria-labelledby="job-title" aria-label="Sezione Esperienze lavorative">
+                <div id="CV-job-title">
+                    <i class="bi bi-bag"></i>
+                    <h2 id="job-title">Esperienze lavorative</h2>
+                </div>
+                <div class="CV-job-items">
+                    <article class="first-job-item">
+                        <h3>Tecnico di laboratorio</h3>
+                        <div class="CV-job-date">
+                            <time datetime="2024-05">05/2024</time> - <time datetime="2024-12">12/2024</time>
+                        </div>
+                        <div class="CV-job-description">
+                            <p>Laboratorio analisi cliniche Rodio Pasquale, Petilia Policastro (KR)</p>
+                        </div>
+                    </article>
+                    <article class="second-job-item">
+                        <h3>Programmatore junior</h3>
+                        <div class="CV-job-date">
+                            <time datetime="2023-05">05/2023</time> - <time datetime="2023-07">07/2023</time>
+                        </div>
+                        <div class="CV-job-description">
+                            <p>e Way Enterprise Business Solutions s.r.l., Cosenza (CS)</p>
+                        </div>
+                    </article>
+                    <article class="third-job-item">
+                        <h3>Tecnico di laboratorio</h3>
+                        <div class="CV-job-date">
+                            <time datetime="2020-10">10/2020</time> - <time datetime="2021-04">04/2021</time>
+                        </div>
+                        <div class="CV-job-description">
+                            <p>Casa di cura Madonna Dello Scoglio, Cotronei (KR) </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <section>
+            <div class="skills hard-skills" aria-labelledby="hard-skills-title">
+                <div class="skills-title">
+                    <h2 id="hard-skills-title">Hard skills</h2>
+                </div>
+                <div class="hard-skills-box">
+                    <div class="skills-icon">
+                        <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000"
+                            alt="icona di CSS3">
+                        <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000"
+                            alt="icona di HTML5">
+                        <img src="https://img.icons8.com/?size=100&id=6kZdxe7t8OL1&format=png&color=000000"
+                            alt="icona pacchetto Microsoft Office">
+                    </div>
+                    <div class="skills-graphics">
+                        <div class="graphics-item">
+                            <p>Photo Editing</p>
+                            <div class="progress" role="progressbar" aria-label="Livello di competenza in Photo Editing"
+                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="graphics-item">
+                            <p>Analisi e interpretazione dei dati scientifici</p>
+                            <div class="progress" role="progressbar"
+                                aria-label="Livello di competenza in interpretazione dei dati scientifici"
+                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="graphics-item">
+                            <p>Strumentazione di laboratorio</p>
+                            <div class="progress" role="progressbar"
+                                aria-label="Livello di competenza nell'utilizzo della strumentazione di laboratorio"
+                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section aria-labelledby="soft-skills-title">
+            <div class="skills soft-skills">
+                <div class="skills-title">
+                    <h2 id="soft-skills-title">Soft skills</h2>
+                </div>
+                <div class="skills-list">
+                    <ul>
+                        <li>Comunicazione</li>
+                        <li>Problem Solving</li>
+                        <li>Attenzione ai dettagli</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section aria-labelledby="certificati-title">
+            <div class="skills certificate-skills">
+                <div class="skills-title">
+                    <h2 id="certificati-title">Certificati</h2>
+                </div>
+                <div class="certificate-list">
+                    <ul>
+                        <li>Corso FIT 24 CFU </li>
+                        <li>Certificato corso singolo Algebra</li>
+                        <li>Certificato corso singolo Complementi di matematica</li>
+                        <li>Abilitazione all'utilizzo del sistema COBAS E411 </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" aria-labelledby="projects-title">
+            <div class="projects-title">
+                <h2 id="projects-title">I miei progetti</h2>
+            </div>
+            <div class="projects-items">
+                <div class="first-project" aria-labelledby="first-project-title">
+                    <div class="projects-background-title">
+                        <h3 id="first-project-title">Logo creato per la pagina di ricette "ViziamoCi!"</h3>
+                    </div>
+                    <div class="first-project-img">
+                        <img src="assets/img/viziamoci.png"
+                            alt="Logo per la pagina di ricette ViziamoCi!. Le lettere V e C sono formate da posate incrociate su un piatto.">
+                    </div>
+                </div>
+                <div class="second-project" aria-labelledby="second-project-title">
+                    <div class="projects-background-title">
+                        <h3 id="second-project-title">Pagina web della piattaforma MeditActive</h3>
+                    </div>
+                    <div class="second-project-img">
+                        <img src="assets/img/meditactive1.png" alt="Prima parte pagina web MeditActive">
+                        <img src="assets/img/meditactive2.png" alt="Seconda parte pagina web MeditActive">
+                        <img src="assets/img/meditactive3.png" alt="Terza parte pagina web MeditActive">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <form class="form" aria-labelledby="form-title" id="contact">
+            <div class="form-title">
+                <h2 id="form-title">Contattami!</h2>
+            </div>
+            <div class="form-box container">
+                <div class="mb-3">
+                    <label for="user-email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="user-email" name="email" required aria-required="true">
+                </div>
+                <div class="mb-3">
+                    <label for="user-message" class="form-label">Messaggio</label>
+                    <textarea class="form-control" id="user-message" name="message" rows="3" required
+                        aria-required="true"></textarea>
+                </div>
+            </div>
+            <div class="button-container">
+                <button type="submit" class="btn">
+                    Invia
+                </button>
+            </div>
+        </form>
+    </main>
+
+    <footer aria-label="Piè di pagina con collegamenti ai social e credits">
+        <nav class="social-icon">
+            <a href="https://www.facebook.com/share/15FaqdeDYh/?mibextid=wwXIfr" target="_blank" rel="noopener"
+                aria-label="Profilo Facebook di Chiara Barletta"><i class="bi bi-facebook bi-social"></i><span
+                    class="tooltip-text">Facebook</span></a>
+            <a href="https://www.instagram.com/clodia._?igsh=MXI1bjVxeXZ4dXNsbw%3D%3D&utm_source=qr" target="_blank"
+                rel="noopener" aria-label="Profilo Instagram di Chiara Barletta"><i
+                    class="bi bi-instagram bi-social"></i><span class="tooltip-text">Instagram</span></a>
+            <a href="https://github.com/junior5969" target="_blank" rel="noopener"
+                aria-label="Profilo GitHub di Chiara Barletta"><i class="bi bi-github bi-social"></i><span
+                    class="tooltip-text">Github</span></a>
+        </nav>
+        <div class="icon-copyright">
+            Icons by
+            <a href="https://icons8.com" target="_blank" rel="noopener">Icons8</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+
+/*FUNCTIONS*/
+
+/// Scurisci un colore di una certa percentuale
+@function shade($color, $percent) {
+  @return mix(black, $color, $percent);
+}
+
+/// Schiarisci un colore di una certa percentuale
+@function tint($color, $percent) {
+  @return mix(white, $color, $percent);
+}

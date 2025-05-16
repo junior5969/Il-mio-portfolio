@@ -1,0 +1,141 @@
+/*MIXIN*/
+
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*GRID, FLEX*/
+
+@mixin flex-row {
+display: flex;
+flex-direction: row;
+}
+
+@mixin flex-row-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-column {
+display: flex;
+flex-direction: column;
+}
+
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin grid-mobile {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(100px, auto));
+    gap: 1rem;
+}
+
+@mixin grid-row {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    gap: 1rem;
+}
+
+
+/*IMG SIZE*/
+
+@mixin logo-img {
+    height: 50px; 
+    width: auto; 
+}
+
+@mixin img-size-mobile {
+     width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+@mixin img-icon {
+    width: 15%;
+   max-width: 60px;
+}
+
+
+/*EFFECTS*/
+
+@mixin hover-scale {
+    transform: scale(1.1);
+}
+
+@mixin border {
+    border: 2px solid rgb(0, 0, 0);
+}
+
+@mixin text-center {
+    text-align: center;
+}
+
+@mixin typing-effect {
+    display: inline-block;
+    overflow: hidden;
+    margin: 0 auto;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    animation: typing 2s steps(25, end), blink-caret 0.5s step-end infinite;
+}
+
+@mixin border-shadow {
+    border: 1px solid rgb(172, 171, 171);
+    box-shadow: 1px 1px 4px rgba(172, 173, 173, 0.944);
+}
+
+@mixin tooltip {
+   visibility: hidden;
+    width: 120px;
+    background-color: rgba(196, 194, 194, 0.807);
+    backdrop-filter: blur(10px);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 1rem;
+    padding: 0.5rem 0;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+
+@mixin v-tooltip {
+  position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 0.5rem;
+    border-style: solid;
+    border-color: rgba(196, 194, 194, 0.807) transparent transparent transparent;
+}
+
+@mixin button-style {
+  width: 110px;
+    height: 50px;
+background-color: rgb(219, 227, 232);
+border: none;
+border-radius: 1rem;
+box-shadow: 0px 20px rgb(174, 203, 218);
+margin-top: 1rem;
+ font-family: "Lexend", sans-serif;
+    color: rgb(21, 25, 29);
+font-size: 1rem;
+}
+
+@mixin button-hover {
+box-shadow: 0px 10px rgb(174, 203, 218);
+background-color: rgb(219, 227, 232);
+transform: translateY(10px);
+}
